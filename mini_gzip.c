@@ -21,7 +21,7 @@
 #include "miniz.h"
 #include "mini_gzip.h"
 
-static void *gzip_compress(uint8_t *data, size_t len, size_t *out_len)
+void *gzip_compress(uint8_t *data, size_t len, size_t *out_len)
 {
     int flush;
     int status;
